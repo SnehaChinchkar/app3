@@ -9,17 +9,17 @@ dotenv.config();
 connectDB();
 
 const app = express();
-
-  
-// app.use(bodyParser.json());
-app.use(express.json());
-app.use(cookieParser());
 app.use(
     cors({
         origin: process.env.FRONTEND_URL,
         credentials: true,
     })
 );
+  
+// app.use(bodyParser.json());
+app.use(express.json());
+app.use(cookieParser());
+
 
 app.get('/', (req, res) => {
     res.json({ message: "Welcome to the Home Page API!" });
