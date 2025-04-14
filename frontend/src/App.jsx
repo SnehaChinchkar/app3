@@ -6,7 +6,7 @@ import  CarouselCustom  from './components/Carousel'
 import MovieList from './components/MovieList'
 import LoginPage from './components/LoginPage'
 import ProfilePage from './components/ProfilePage'
-
+import MovieDetail  from "./pages/MovieDetail";
 function App() {
   
   return (
@@ -27,6 +27,7 @@ function App() {
         />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/profile" element={<ProfilePage />} />
+      <Route path="/movies/:id" element={<MovieDetail/>} />
       </Routes>
     </BrowserRouter>
     
