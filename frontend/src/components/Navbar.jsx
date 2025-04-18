@@ -23,7 +23,7 @@ export function Navbar() {
         <li className="cursor-pointer hover:text-gray-300"><Link to="/">Home</Link></li>
         <li className="cursor-pointer hover:text-gray-300">Genre</li>
         {/* <li className="cursor-pointer hover:text-gray-300"><Link to="/login">Login</Link></li> */}
-        <li className="cursor-pointer hover:text-gray-300">Movies</li>
+        <li className="cursor-pointer hover:text-gray-300"><Link to="/news">News</Link></li>
         <li className="cursor-pointer hover:text-gray-300">TV Shows</li>
         {user ? (
           <>
